@@ -7,12 +7,14 @@ Band.init(
   {
     name: DataTypes.STRING,
     genre: DataTypes.STRING,
+    showCount: DataTypes.NUMBER,
   },
   {
     sequelize: db,
     modelName: "Band",
   }
 );
+
 
 module.exports = {
   Band,
